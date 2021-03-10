@@ -1,0 +1,738 @@
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ir="http://www.inrule.com/XmlSchema/Schema" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style type="text/css">
+          body {
+          font: normal 8pt verdana,arial,helvetica;
+          color: #000000;
+          }
+          table tr th, table tr td {
+          font-size: 8pt;
+          text-align: left;
+          }
+          table.fields tr th{
+          font-weight: bold;
+          background:#a6caf0;
+          }
+          table.fields tr td {
+          font-size: 8pt;
+          text-align: left;
+          background: #eeeee0;
+          }
+
+          table.rules tr th {
+          font-weight: bold;
+          background:#a6caf0;
+          }
+          table.rules tr td {
+          font-size: 8pt;
+          text-align: left;
+          background: #eeeee0;
+          }
+          table.calculations tr th {
+          font-weight: bold;
+          background:#a6caf0;
+          }
+          table.calculations tr td {
+          font-size: 8pt;
+          text-align: left;
+          background: #eeeee0;
+          table-layout:fixed;
+          overflow:visible;
+          }
+          table.notifications tr th {
+          font-weight: bold;
+          background:#a6caf0;
+          }
+          table.notifications tr td {
+          font-size: 8pt;
+          text-align: left;
+          background: #eeeee0;
+          }
+          table.actions tr th {
+          font-weight: bold;
+          background:#a6caf0;
+          }
+          table.actions tr td {
+          font-size: 8pt;
+          text-align: left;
+          background: #eeeee0;
+          }
+          h1 {
+          margin: 0px 0px 5px;
+          font: 14pt verdana,arial,helvetica;
+          }
+          h2 {
+          margin-top: 1em;
+          margin-bottom: 0.5em;
+          font: bold 125% verdana,arial,helvetica;
+          }
+          div.entity {
+          border: 1px solid #cccccc;
+          margin-bottom: 1em;
+          }
+          div.def {
+          border-bottom: 1px solid #cccccc;
+          }
+          div.rules {
+          border-bottom: 1px solid #cccccc;
+          }
+          span.colx {
+          
+          }
+          .code {
+          font-size: 11px;
+          font-weight: normal;
+          font-family: Lucida Console, monospace;
+          background-color: #eeeeee;
+          padding: 0.25cm;
+          border-style: solid;
+          border-width: 1px;
+          border-color: #cccccc
+          }
+          table.rulesetfields tr {
+          background:#a6caf0;
+          text-align:left;
+          }
+          table.rulesetfields tr td {
+          font-size: 8pt;
+          text-align: left;
+          font-weight: normal;
+          background-color:tan;
+          }
+
+        </style>
+  </head>
+  <body>
+    <h1>InRule RuleApp Report</h1>
+        RuleApp Name:
+        BG_CI_01
+        Guid:
+        b1f76b5e-71ba-4a6d-82d3-01b8891d542e
+        Last Modified:
+        2021-03-10<br><br>
+          Total # Rules and Calcs:
+          27
+            # Entities:
+            18
+            # Fields:
+            114<br><hr size="1"><h2>Entities:</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Entity1">InRuleClaimsAdj</a></td><td><a class="HrefLink" href="#Entity2">InruleRequest</a></td><td><a class="HrefLink" href="#Entity3">InruleResponse</a></td><td><a class="HrefLink" href="#Entity4">Member</a></td></tr><tr><td><a class="HrefLink" href="#Entity5">Claim</a></td><td><a class="HrefLink" href="#Entity6">ClaimInvoice</a></td><td><a class="HrefLink" href="#Entity7">ClaimInvoiceLine</a></td><td><a class="HrefLink" href="#Entity8">ClaimsPerMonth</a></td></tr><tr><td><a class="HrefLink" href="#Entity9">ClaimInvoiceResult</a></td><td><a class="HrefLink" href="#Entity10">ClaimInvoiceLineResult</a></td><td><a class="HrefLink" href="#Entity11">OutcomeMessage</a></td><td><a class="HrefLink" href="#Entity12">OutcomeMessageParameters</a></td></tr><tr><td><a class="HrefLink" href="#Entity13">ClaimHistory</a></td><td><a class="HrefLink" href="#Entity14">ClaimInvoiceHistory</a></td><td><a class="HrefLink" href="#Entity15">ClaimInvoiceLineHistory</a></td><td><a class="HrefLink" href="#Entity16">Diagnosis</a></td></tr><tr><td><a class="HrefLink" href="#Entity17">DiagnosisFull</a></td><td><a class="HrefLink" href="#Entity18">ConfigurationParameter</a></td><td></td><td></td></tr></table><h2>Independent Rule Sets:</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"></table><h2>Data Elements, End Points, Udf Libraries and Categories:</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#DataElements">
+                    Data Elements
+                  </a></td><td><a class="HrefLink" href="#EndPoints">
+                    End Points
+                  </a></td><td><a class="HrefLink" href="#UdfLibraries">
+                    Udf Libraries
+                  </a></td><td><a class="HrefLink" href="#Categories">
+                    Categories
+                  </a></td><td></td></tr></table><div class="entity"><a class="HrefName" name="Entity1"></a><h2>
+          Entity: InRuleClaimsAdj</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields1">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations1">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules1">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions1">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields1"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">InRuleClaimsAdj</span></td><td><span class="colx">inruleRequest</span></td><td><span class="colx">inruleRequest</span></td><td><span class="colx">InruleRequest</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">InRuleClaimsAdj</span></td><td><span class="colx">inruleResponse</span></td><td><span class="colx">inruleResponse</span></td><td><span class="colx">InruleResponse</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">InRuleClaimsAdj</span></td><td><span class="colx">referenceLookBackMonths</span></td><td><span class="colx">Reference Look Back Months</span></td><td><span class="colx">Integer<br>
+            [Temporary]
+          </span></td><td>1</td><td><span class="colx"></span></td></tr><tr><td><span class="colx">InRuleClaimsAdj</span></td><td><span class="colx">ConfigurationParameters</span></td><td><span class="colx">Configuration Parameters</span></td><td><span class="colx">ConfigurationParameter<br>
+            [Temporary]
+          </span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">InRuleClaimsAdj</span></td><td><span class="colx">Field2</span></td><td><span class="colx">Field2</span></td><td><span class="colx">String<br>
+            [Temporary]
+          </span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">InRuleClaimsAdj</span></td><td><span class="colx">Field3</span></td><td><span class="colx">Field3</span></td><td><span class="colx">String<br>
+            [Temporary]
+          </span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">InRuleClaimsAdj</span></td><td><span class="colx">Field1</span></td><td><span class="colx">Field1</span></td><td><span class="colx">String<br>
+            [Temporary]
+          </span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">InRuleClaimsAdj</span></td><td><span class="colx">Field4</span></td><td><span class="colx">Field4</span></td><td><span class="colx">String<br>
+            [Temporary]
+          </span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">InRuleClaimsAdj</span></td><td><span class="colx">Field5</span></td><td><span class="colx">Field5</span></td><td><span class="colx">String<br>
+            [Temporary]
+          </span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations1"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div><a class="HrefName" name="Rules1"></a><div class="rules"><h2>
+          Rule Set:
+          ValidateRules</h2>
+    Fire mode:
+    Explicit<table class="rules" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="60%"><col width="20%"><tr><th>Rule or Action</th><th>Detail</th><th>Description, Notes, and Categories</th></tr><tr><td valign="top" title="Validate"><span class="colx">Validate</span></td><td><span class="colx"><b>Take the following actions:</b><b><br>&nbsp;&nbsp;&nbsp;&nbsp;execute database query 'GetConfigurationParameters'<br>&nbsp;&nbsp;&nbsp;&nbsp;execute rule set <b><b><b>inruleRequest</b><b> claim</b></b><b> ValidateClaimRules</b></b></b> </span></td><td></td></tr><tr><td title="Set inruleRequest"><span class="colx">
+            Set
+            inruleRequest</span></td><td><span class="colx">
+          Set
+          inruleRequest
+          to
+          null</span></td><td></td></tr></table></div><div class="rules"><h2>
+          Rule Set:
+          AddRejectionToResponse</h2>
+    Fire mode:
+    Explicit<table class="rules" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="60%"><col width="20%"><tr><th>Rule or Action</th><th>Detail</th><th>Description, Notes, and Categories</th></tr><tr><td title="Declare invoiceResult"><span class="colx">
+            Declare
+            invoiceResult</span></td><td><span class="colx">
+          Declare
+          invoiceResult
+          as
+          ClaimInvoiceResult</span></td><td></td></tr><tr><td title="Declare invoiceLineResult"><span class="colx">
+            Declare
+            invoiceLineResult</span></td><td><span class="colx">
+          Declare
+          invoiceLineResult
+          as
+          ClaimInvoiceLineResult</span></td><td></td></tr><tr><td valign="top" title="CreateAndSetResponseItem"><span class="colx">CreateAndSetResponse...
+      </span></td><td><span class="colx"><b>Take the following actions:</b><b><br><b>&nbsp;&nbsp;&nbsp;&nbsp;If</b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>inruleResponse</b> is null or empty<br><b>&nbsp;&nbsp;&nbsp;&nbsp;Then</b><b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;set <b>inruleResponse</b> to HelperLib.CreateNewInRuleResponse()</b> <br><b>&nbsp;&nbsp;&nbsp;&nbsp;If</b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; no members exist in <b><b>inruleResponse</b><b> claimInvoices</b></b> filtered by <b>invoiceNumber</b> is equal to invoiceNumberToAdd<br><b>&nbsp;&nbsp;&nbsp;&nbsp;Then</b><b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;set <b>invoiceResult</b> to HelperLib.CreateNewClaimInvoiceResult()<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;set <b><b>invoiceResult</b><b> invoiceNumber</b></b> to <b>invoiceNumberToAdd</b></b> <br><b>&nbsp;&nbsp;&nbsp;&nbsp;Else</b><b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;set <b>invoiceResult</b> to the first matching member from <b><b>inruleResponse</b><b> claimInvoices</b></b> where <b>invoiceNumber</b> is equal to invoiceNumberToAdd</b> <br><b>&nbsp;&nbsp;&nbsp;&nbsp;If</b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; no members exist in <b><b>invoiceResult</b><b> claimInvoiceLines</b></b> filtered by <b>invoiceLineNumber</b> is equal to invoiceLineNumberToAdd<br><b>&nbsp;&nbsp;&nbsp;&nbsp;Then</b><b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;set <b>invoiceLineResult</b> to HelperLib.CreateNewClaimInvoiceLineResult()<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;set <b><b>invoiceLineResult</b><b> invoiceLineNumber</b></b> to <b>invoiceLineNumberToAdd</b></b> <br><b>&nbsp;&nbsp;&nbsp;&nbsp;Else</b><b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;set <b>invoiceLineResult</b> to the first matching member from <b><b>invoiceResult</b><b> claimInvoiceLines</b></b> where <b>invoiceLineNumber</b> is equal to invoiceLineNumberToAdd</b> <br>&nbsp;&nbsp;&nbsp;&nbsp;add collection member 'AddMessageCode'<br>&nbsp;&nbsp;&nbsp;&nbsp;add collection member 'AddInvoiceLineResult'<br>&nbsp;&nbsp;&nbsp;&nbsp;add collection member 'AddInvoiceResult'</b> </span></td><td></td></tr><tr><td title="Set Getmember(GetMember(inruleRequest.claim.invoices, invoiceId = invoiceNumberToAdd).invoiceLines, invoiceLineId = invoiceLineNumberToAdd).IsSuspended"><span class="colx">
+            Set
+            Getmember(GetMember(...
+      </span></td><td><span class="colx">
+          Set
+          Getmember(GetMember(inruleRequest.claim.invoices, invoiceId = invoiceNumberToAdd).invoiceLines, invoiceLineId = invoiceLineNumberToAdd).IsSuspended
+          to
+          true</span></td><td></td></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity2"></a><h2>
+          Entity: InruleRequest</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields2">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations2">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules2">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions2">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields2"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">InruleRequest</span></td><td><span class="colx">member</span></td><td><span class="colx">member</span></td><td><span class="colx">Member</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">InruleRequest</span></td><td><span class="colx">claim</span></td><td><span class="colx">claim</span></td><td><span class="colx">Claim</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">InruleRequest</span></td><td><span class="colx">systemDate</span></td><td><span class="colx">systemDate</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">InruleRequest</span></td><td><span class="colx">claimsHistoryForMember</span></td><td><span class="colx">claimsHistoryForMember</span></td><td><span class="colx">ClaimHistory</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">InruleRequest</span></td><td><span class="colx">claimsHistoryForFamilyMembers</span></td><td><span class="colx">claimsHistoryForFamilyMembers</span></td><td><span class="colx">ClaimHistory</span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations2"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity3"></a><h2>
+          Entity: InruleResponse</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields3">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations3">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules3">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions3">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields3"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">InruleResponse</span></td><td><span class="colx">decisionEngineStatus</span></td><td><span class="colx">decisionEngineStatus</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">InruleResponse</span></td><td><span class="colx">claimInvoices</span></td><td><span class="colx">claimInvoices</span></td><td><span class="colx">ClaimInvoiceResult</span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations3"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity4"></a><h2>
+          Entity: Member</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields4">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations4">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules4">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions4">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields4"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">Member</span></td><td><span class="colx">bupaMemberId</span></td><td><span class="colx">bupaMemberId</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">Member</span></td><td><span class="colx">gender</span></td><td><span class="colx">gender</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">Member</span></td><td><span class="colx">dateOfBirth</span></td><td><span class="colx">dateOfBirth</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">Member</span></td><td><span class="colx">nationality</span></td><td><span class="colx">nationality</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">Member</span></td><td><span class="colx">dateOfDeath</span></td><td><span class="colx">dateOfDeath</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">Member</span></td><td><span class="colx">renewalDate</span></td><td><span class="colx">renewalDate</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations4"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity5"></a><h2>
+          Entity: Claim</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields5">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations5">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules5">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions5">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields5"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">Claim</span></td><td><span class="colx">bupaClaimId</span></td><td><span class="colx">bupaClaimId</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">Claim</span></td><td><span class="colx">version</span></td><td><span class="colx">version</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">Claim</span></td><td><span class="colx">symptomDate</span></td><td><span class="colx">symptomDate</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">Claim</span></td><td><span class="colx">admissionDate</span></td><td><span class="colx">admissionDate</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">Claim</span></td><td><span class="colx">dischargeDate</span></td><td><span class="colx">dischargeDate</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">Claim</span></td><td><span class="colx">baseCurrency</span></td><td><span class="colx">baseCurrency</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">Claim</span></td><td><span class="colx">overrideReasonCode</span></td><td><span class="colx">overrideReasonCode</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">Claim</span></td><td><span class="colx">invoices</span></td><td><span class="colx">invoices</span></td><td><span class="colx">ClaimInvoice</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">Claim</span></td><td><span class="colx">numberOfClaimsForPeriod</span></td><td><span class="colx">numberOfClaimsForPeriod</span></td><td><span class="colx">ClaimsPerMonth</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">Claim</span></td><td><span class="colx">claimsCountForReferencePeriod</span></td><td><span class="colx">claimsCountForReferencePeriod</span></td><td><span class="colx">Integer<br>
+            [Temporary]
+          </span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations5"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">Claim</span></td><td><span class="colx">IsEntireClaimSuspended</span></td><td><span class="colx">IsEntireClaimSuspended</span></td><td><span class="colx">Boolean<br>
+            [Temporary]
+          </span></td><td><span class="colx"><pre>Safe(Count(invoices) &gt; Count(invoices, IsEntireInvoiceSuspended), false)</pre></span></td><td><span class="colx"></span></td></tr></table></div><a class="HrefName" name="Rules5"></a><div class="rules"><h2>
+          Rule Set:
+          ValidateClaimRules</h2>
+    Fire mode:
+    Explicit
+      Description:
+      Reject/suspend should be at line level, not root claim/Adj.<table class="rules" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="60%"><col width="20%"><tr><th>Rule or Action</th><th>Detail</th><th>Description, Notes, and Categories</th></tr><tr><td valign="top" title="GetConfiguration"><span class="colx">GetConfiguration</span></td><td><span class="colx"><b>Take the following actions:</b><b><br>&nbsp;&nbsp;&nbsp;&nbsp;set <b>claimsCountForReferencePeriod</b> to get configuration parameter "LookBackMonths" for rule "FR003" as integer</b> </span></td><td></td></tr><tr><td valign="top" title="Validate"><span class="colx">Validate</span></td><td><span class="colx"><b>Take the following actions:</b><b><br><b>&nbsp;&nbsp;&nbsp;&nbsp;If</b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>overrideReasonCode</b> does not have a value of "Waive Fraud Rules"<br><b>&nbsp;&nbsp;&nbsp;&nbsp;Then</b><b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;execute member rule set <b>ValidateClaimInvoiceRules</b> for each member in <b>invoices</b></b> </b> </span></td><td></td></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity6"></a><h2>
+          Entity: ClaimInvoice</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields6">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations6">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules6">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions6">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields6"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">ClaimInvoice</span></td><td><span class="colx">invoiceId</span></td><td><span class="colx">invoiceId</span></td><td><span class="colx">Integer</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoice</span></td><td><span class="colx">providerId</span></td><td><span class="colx">providerId</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoice</span></td><td><span class="colx">providerSpecialisation</span></td><td><span class="colx">providerSpecialisation</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoice</span></td><td><span class="colx">diagnosis</span></td><td><span class="colx">diagnosis</span></td><td><span class="colx">DiagnosisFull</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoice</span></td><td><span class="colx">invoiceDate</span></td><td><span class="colx">invoiceDate</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoice</span></td><td><span class="colx">payeeType</span></td><td><span class="colx">payeeType</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoice</span></td><td><span class="colx">participatingProviderInd</span></td><td><span class="colx">participatingProviderInd</span></td><td><span class="colx">Boolean</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoice</span></td><td><span class="colx">countryOfTreatment</span></td><td><span class="colx">countryOfTreatment</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoice</span></td><td><span class="colx">invoiceLines</span></td><td><span class="colx">invoiceLines</span></td><td><span class="colx">ClaimInvoiceLine</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoice</span></td><td><span class="colx">numberOfInvoicesForProviderInPeriod</span></td><td><span class="colx">numberOfInvoicesForProviderInPeriod</span></td><td><span class="colx">ClaimsPerMonth</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoice</span></td><td><span class="colx">invoicesCountForProviderInReferencePeriod</span></td><td><span class="colx">Invoices Count For Provider In Reference Period</span></td><td><span class="colx">Integer<br>
+            [Temporary]
+          </span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoice</span></td><td><span class="colx">numberOfInvoicesForProvider</span></td><td><span class="colx">numberOfInvoicesForProvider</span></td><td><span class="colx">Integer</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoice</span></td><td><span class="colx">IsEntireInvoiceSuspended</span></td><td><span class="colx">Is Entire Invoice Suspended</span></td><td><span class="colx">Boolean<br>
+            [Temporary]
+          </span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations6"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div><a class="HrefName" name="Rules6"></a><div class="rules"><h2>
+          Rule Set:
+          ValidateClaimInvoiceRules</h2>
+    Fire mode:
+    Explicit<table class="rules" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="60%"><col width="20%"><tr><th>Rule or Action</th><th>Detail</th><th>Description, Notes, and Categories</th></tr><tr><td valign="top" title="GetConfiguration"><span class="colx">GetConfiguration</span></td><td><span class="colx"><b>Take the following actions:</b><b><br>&nbsp;&nbsp;&nbsp;&nbsp;set <b>Invoices Count For Provider In Reference Period</b> to get configuration parameter "LookBackMonths" for rule "FR005" as integer</b> </span></td><td></td></tr><tr><td valign="top" title="Validate"><span class="colx">Validate</span></td><td><span class="colx"><b>Take the following actions:</b><b><br>&nbsp;&nbsp;&nbsp;&nbsp;execute member rule set <b>ValidateClaimInvoiceLineRules</b> for each member in <b>invoiceLines</b><br>&nbsp;&nbsp;&nbsp;&nbsp;execute rule set <b>FR003_MultiClaimsInBriefTime</b></b> </span></td><td></td></tr></table></div><div class="rules"><h2>
+          Rule Set:
+          FR003_MultiClaimsInBriefTime</h2>
+    Fire mode:
+    Explicit
+      Description:
+      Rule to prevent paying for possible fraudulent multiple claims for the member in a brief duration.
+
+If one invoice triggers this suspension, then suspend all invoices on claim.<table class="rules" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="60%"><col width="20%"><tr><th>Rule or Action</th><th>Detail</th><th>Description, Notes, and Categories</th></tr><tr><td title="Declare invoiceLine"><span class="colx">
+            Declare
+            invoiceLine</span></td><td><span class="colx">
+          Declare
+          invoiceLine
+          as
+          ClaimInvoiceLine</span></td><td></td></tr><tr><td valign="top" title="ValidationRules"><span class="colx">ValidationRules</span></td><td><span class="colx"><b>Take the following actions:</b><b><br><b>&nbsp;&nbsp;&nbsp;&nbsp;If</b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; any members exist in <b>invoiceLines</b> filtered by <b>benefitType</b> does not have a value of "Cancer", "Maternity" and not <b>Is Suspended</b><br><b>&nbsp;&nbsp;&nbsp;&nbsp;Then</b><b><br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If</b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><b>claim</b><b> claimsCountForReferencePeriod</b></b> is greater than 5<br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Then</b><b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;suspend all invoices on parent claim with message "FR003/1", except for  "Cancer", "Maternity"</b> </b> </b> </span></td><td></td></tr></table></div><div class="rules"><h2>
+          Rule Set:
+          FR005_MultiClaimsfromSingleProv</h2>
+    Fire mode:
+    Explicit
+      Description:
+      Rule to prevent paying for possible fraudulent claims for the member by a provider in a specified time duration(Default-6 months).<table class="rules" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="60%"><col width="20%"><tr><th>Rule or Action</th><th>Detail</th><th>Description, Notes, and Categories</th></tr><tr><td title="Declare lookBackMonths"><span class="colx">
+            Declare
+            lookBackMonths</span></td><td><span class="colx">
+          Declare
+          lookBackMonths
+          as
+          Integer</span></td><td></td></tr><tr><td title="Declare claimsCountForProvider"><span class="colx">
+            Declare
+            claimsCountForProvid...
+      </span></td><td><span class="colx">
+          Declare
+          claimsCountForProvider
+          as
+          Integer</span></td><td></td></tr><tr><td valign="top" title="ValidationRulesls"><span class="colx">ValidationRulesls</span></td><td><span class="colx"><b>Take the following actions:</b><b><br><b>&nbsp;&nbsp;&nbsp;&nbsp;If</b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; all of the following are true<b><br><b><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;claim</b><b> overrideReasonCode</b></b> does not have a value of "Waive Fraud Rules"<br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invoices Count For Provider In Reference Period</b> is greater than 5</b> <br><b>&nbsp;&nbsp;&nbsp;&nbsp;Then</b><b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;suspend all invoices on parent claim with message "FR005/1", except for  </b> </b> </span></td><td></td></tr></table></div><div class="rules"><h2>
+          Rule Set:
+          SuspendAllInvoiceLinesRules</h2>
+    Fire mode:
+    Explicit<table class="rules" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="60%"><col width="20%"><tr><th>Rule or Action</th><th>Detail</th><th>Description, Notes, and Categories</th></tr><tr><td title="Declare invoiceLine"><span class="colx">
+            Declare
+            invoiceLine</span></td><td><span class="colx">
+          Declare
+          invoiceLine
+          as
+          ClaimInvoiceLine</span></td><td></td></tr><tr><td valign="top" title="ValidationRules"><span class="colx">ValidationRules</span></td><td><span class="colx"><b>Take the following actions:</b><b><br>&nbsp;&nbsp;&nbsp;&nbsp;set <b>exceptedBenefitTypesCsv</b> to "'" & <b>exceptedBenefitTypesCsv</b> & ","<br><b>&nbsp;&nbsp;&nbsp;&nbsp;For each </b><b>invoiceLine</b> in <b>invoiceLines</b> where not <b>exceptedBenefitTypesCsv</b> contains "," & <b>benefitType</b> & ","<b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;execute rule set <b><b>InRuleClaimsAdj</b><b> AddRejectionToResponse</b> using (invoiceNumberToAdd = <b><b>this ClaimInvoice</b><b> invoiceId</b></b>, invoiceLineNumberToAdd = <b><b>invoiceLine</b><b> invoiceLineId</b></b>, rejectMessage = <b>rejectMessage</b>)</b></b> <br>&nbsp;&nbsp;&nbsp;&nbsp;set <b>Is Entire Invoice Suspended</b> to true</b> </span></td><td></td></tr><tr style="color:gray"><td valign="top" title="FireNotification1"><span class="colx">FireNotification1
+      [Disabled]
+    </span></td><td><span class="colx">fire notification <b>[message]</b></span></td><td></td></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity7"></a><h2>
+          Entity: ClaimInvoiceLine</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields7">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations7">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules7">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions7">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields7"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">invoiceLineId</span></td><td><span class="colx">invoiceLineId</span></td><td><span class="colx">Integer</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">bupaBenefitId</span></td><td><span class="colx">bupaBenefitId</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx">
+      Description:
+      this is child of benefitType</span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">benefitType</span></td><td><span class="colx">benefitType</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">bupaRegistrationId</span></td><td><span class="colx">bupaRegistrationId</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">bupaPolicyId</span></td><td><span class="colx">bupaPolicyId</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">bupaProductId</span></td><td><span class="colx">bupaProductId</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">procedurecode</span></td><td><span class="colx">procedurecode</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">procedureType</span></td><td><span class="colx">procedureType</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">treatmentFromDate</span></td><td><span class="colx">treatmentFromDate</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">treatmentToDate</span></td><td><span class="colx">treatmentToDate</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">policyValidTo</span></td><td><span class="colx">policyValidTo</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">memberProductLapsedDate</span></td><td><span class="colx">memberProductLapsedDate</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">memberProductSuspensionDate</span></td><td><span class="colx">memberProductSuspensionDate</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">memberProductStatus</span></td><td><span class="colx">memberProductStatus</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">secondClaimCountry</span></td><td><span class="colx">secondClaimCountry</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">relationship</span></td><td><span class="colx">relationship</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">numberOfIncidents</span></td><td><span class="colx">numberOfIncidents</span></td><td><span class="colx">Integer</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">overrideReasonCode</span></td><td><span class="colx">overrideReasonCode</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">nettAmount</span></td><td><span class="colx">nettAmount</span></td><td><span class="colx">Decimal</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">claimedAmount</span></td><td><span class="colx">claimedAmount</span></td><td><span class="colx">Decimal</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">originalJoinDate</span></td><td><span class="colx">originalJoinDate</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">BiJoinDate</span></td><td><span class="colx">BiJoinDate</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">numberOfLineItemsForProcedure</span></td><td><span class="colx">numberOfLineItemsForProcedure</span></td><td><span class="colx">Integer</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">IsSuspended</span></td><td><span class="colx">Is Suspended</span></td><td><span class="colx">Boolean<br>
+            [Temporary]
+          </span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations7"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div><a class="HrefName" name="Rules7"></a><div class="rules"><h2>
+          Rule Set:
+          ValidateClaimInvoiceLineRules</h2>
+    Fire mode:
+    Explicit<table class="rules" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="60%"><col width="20%"><tr><th>Rule or Action</th><th>Detail</th><th>Description, Notes, and Categories</th></tr><tr><td valign="top"><span class="colx">ProcessByProcedureCode</span></td><td><span class="colx"><b>Decision Table</b><br><u>Condition:</u>?Procedure Code<br>
+              Allow 'Any' condition
+            <br>
+              Field:
+              procedureCode<table class="rules" style="BACKGROUND-COLOR:#FFFFFF"><b><tr><th>Display name</th><th>Expression</th></tr></b><tr><td>H0210</td><td>procedureCode
+                      =
+                      H0210</td></tr><tr><td>44950</td><td>procedureCode
+                      =
+                      44950</td></tr><tr><td>44960</td><td>procedureCode
+                      =
+                      44960</td></tr><tr><td>44970</td><td>procedureCode
+                      =
+                      44970</td></tr><tr><td>Is An Ectomy Procedure</td><td>IsInValueList(EctomyProceduresList, procedurecode)</td></tr></table><br><u>Condition:</u>?Procedure Type<br>
+              Allow 'Any' condition
+            <br>
+              Field:
+              procedureType<table class="rules" style="BACKGROUND-COLOR:#FFFFFF"><b><tr><th>Display name</th><th>Expression</th></tr></b><tr><td>ComplexMajor</td><td>procedureType
+                      =
+                      ComplexMajor</td></tr><tr><td>MajorPlus</td><td>procedureType
+                      =
+                      MajorPlus</td></tr><tr><td>Major</td><td>procedureType
+                      =
+                      Major</td></tr><tr><td>Intermediate</td><td>procedureType
+                      =
+                      Intermediate</td></tr><tr><td>Minor</td><td>procedureType
+                      =
+                      Minor</td></tr><tr><td>InPatientNonSurgical</td><td>procedureType
+                      =
+                      InPatientNonSurgical</td></tr><tr><td>EmergencyDental</td><td>procedureType
+                      =
+                      EmergencyDental</td></tr><tr><td>Oncology</td><td>procedureType
+                      =
+                      Oncology</td></tr></table><br><u>Condition:</u>?Benefit Type<br>
+              Allow 'Any' condition
+            <br>
+              Field:
+              benefitType<table class="rules" style="BACKGROUND-COLOR:#FFFFFF"><b><tr><th>Display name</th><th>Expression</th></tr></b><tr><td>Cancer</td><td>benefitType
+                      =
+                      400</td></tr><tr><td>Maternity</td><td>benefitType
+                      =
+                      500</td></tr><tr><td>Evacuation</td><td>benefitType
+                      =
+                      950</td></tr><tr><td>Repatriation </td><td>benefitType
+                      =
+                      960</td></tr><tr><td>Vaccination</td><td>benefitType
+                      =
+                      1</td></tr><tr><td>Preventive Check-up</td><td>benefitType
+                      =
+                      2</td></tr><tr><td>Dentistry</td><td>benefitType
+                      =
+                      3</td></tr><tr><td>Not Evacuation or Repatriation</td><td>Not(IsInValueList(ToValueList("950", "960"), benefitType))</td></tr><tr><td>Not Vaccination, Preventive Check-up, orDentistry</td><td>Not(IsInValueList(ToValueList("1", "2", "3"), benefitType))</td></tr></table><br><u>Action:</u>?Validate
+                (Business Language)
+              <br>
+              Display name:
+              Validate<table class="rules" style="BACKGROUND-COLOR:#FFFFFF"><b><tr><th>Display name</th><th>Expression</th></tr></b><tr><td>FR001 - Procedures Already Paid For</td><td>
+                    (BL text not shown)
+                  </td></tr><tr><td>FR002 - Claims for Treatment in Multiple Countries</td><td>
+                    (BL text not shown)
+                  </td></tr><tr><td>FR004 - Family Treatment with Primary</td><td>
+                    (BL text not shown)
+                  </td></tr><tr><td>FR009 -</td><td>
+                    (BL text not shown)
+                  </td></tr></table><br><u>Decisions</u><table class="rules" style="BACKGROUND-COLOR:#FFFFFF"><tr><th class="rules">Row #</th><th class="rules">Procedure Code</th><th class="rules">Procedure Type</th><th class="rules">Benefit Type</th><th class="rules" style="COLOR:#009900">Validate</th></tr><tr><td>1</td><td valign="top">Is An Ectomy Procedure</td><td valign="top">
+                      -Any-
+                    </td><td valign="top">
+                      -Any-
+                    </td><td valign="top">FR001 - Procedures Already Paid For</td></tr><tr><td>2</td><td valign="top">
+                      -Any-
+                    </td><td valign="top">
+                      -Any-
+                    </td><td valign="top">Not Evacuation or Repatriation</td><td valign="top">FR002 - Claims for Treatment in Multiple Countries</td></tr><tr><td>3</td><td valign="top">
+                      -Any-
+                    </td><td valign="top">
+                      -Any-
+                    </td><td valign="top">Not Vaccination, Preventive Check-up, orDentistry</td><td valign="top">FR004 - Family Treatment with Primary</td></tr></table></span></td><td></td></tr></table></div><div class="rules"><h2>
+          Rule Set:
+          FR001_ProceduresAlreadyPaidFor</h2>
+    Fire mode:
+    Explicit
+      Description:
+      Rule to prevent paying for procedures already paid for the member.<table class="rules" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="60%"><col width="20%"><tr><th>Rule or Action</th><th>Detail</th><th>Description, Notes, and Categories</th></tr><tr><td valign="top" title="ValidationRules"><span class="colx">ValidationRules</span></td><td><span class="colx"><b>Take the following actions:</b><br><b>&nbsp;&nbsp;&nbsp;&nbsp;If</b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; all of the following are true<b><br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;overrideReasonCode</b> does not have a value of "Waive Fraud Rules"<br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;procedurecode</b> is in <b>EctomyProceduresList</b><br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numberOfLineItemsForProcedure</b> is greater than 1</b> <br><b>&nbsp;&nbsp;&nbsp;&nbsp;Then</b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;suspend claim invoice line for invoice <b><b>ClaimInvoice</b><b> invoiceId</b></b> and line <b>invoiceLineId</b> with message "FR001/1"  </span></td><td></td></tr></table></div><div class="rules"><h2>
+          Rule Set:
+          FR002_ClaimsForTreatmentInMultipleCountries</h2>
+    Fire mode:
+    Explicit
+      Description:
+      Rule to prevent paying claims for treatment in the same duration in multiple countries.<table class="rules" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="60%"><col width="20%"><tr><th>Rule or Action</th><th>Detail</th><th>Description, Notes, and Categories</th></tr><tr><td title="Declare historyClaim"><span class="colx">
+            Declare
+            historyClaim</span></td><td><span class="colx">
+          Declare
+          historyClaim
+          as
+          ClaimHistory</span></td><td></td></tr><tr><td title="Declare historyClaimInvoice"><span class="colx">
+            Declare
+            historyClaimInvoice</span></td><td><span class="colx">
+          Declare
+          historyClaimInvoice
+          as
+          ClaimInvoiceHistory</span></td><td></td></tr><tr><td title="Declare historyClaimInvoiceLine"><span class="colx">
+            Declare
+            historyClaimInvoiceL...
+      </span></td><td><span class="colx">
+          Declare
+          historyClaimInvoiceLine
+          as
+          ClaimInvoiceLineHistory</span></td><td></td></tr><tr><td title="Declare countryTemp"><span class="colx">
+            Declare
+            countryTemp</span></td><td><span class="colx">
+          Declare
+          countryTemp
+          as
+          String
+            set to
+            ""</span></td><td></td></tr><tr><td valign="top" title="ValidationRules"><span class="colx">ValidationRules</span></td><td><span class="colx"><b>Take the following actions:</b><br><b>&nbsp;&nbsp;&nbsp;&nbsp;If</b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; all of the following are true<b><br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;overrideReasonCode</b> does not have a value of "Waive Fraud Rules"<br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;benefitType</b> does not have a value of "Evacuation", "Repatriation"</b> <br><b>&nbsp;&nbsp;&nbsp;&nbsp;Then</b><br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For each </b><b>historyClaim</b> in <b><b>inruleRequest</b><b> claimsHistoryForMember</b></b><br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If</b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; all of the following are true<b><br><b><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;historyClaim</b><b> status</b></b> has a value of "Paid", "Rejected", "Suspended"<br><b><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;historyClaim</b><b> Country</b></b> is not null or empty<br><b><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;historyClaim</b><b> Country</b></b> is not equal to <b><b>ClaimInvoice</b><b> countryOfTreatment</b></b></b> <br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Then</b><br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For each </b><b>historyClaimInvoice</b> in <b><b>historyClaim</b><b> invoices</b></b><br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For each </b><b>historyClaimInvoiceLine</b> in <b><b>historyClaimInvoice</b><b> invoiceLines</b></b><br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If</b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; all of the following are true<b><br><b><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;historyClaimInvoiceLine</b><b> benefitType</b></b> does not have a value of "Evacuation", "Repatriation"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;date range <b>treatmentFromDate</b> <b>treatmentToDate</b> overlaps range <b><b>historyClaimInvoiceLine</b><b> treatmentStartDate</b></b> <b><b>historyClaimInvoiceLine</b><b> treatmentEndDate</b></b> </b> <br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Then</b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;suspend claim invoice line for invoice <b><b>ClaimInvoice</b><b> invoiceId</b></b> and line <b>invoiceLineId</b> with message "FR002/1"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;set <b>Is Suspended</b> to true<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;halt rule set and log message "FR002 triggered for the current invoice line."       </span></td><td></td></tr></table></div><div class="rules"><h2>
+          Rule Set:
+          FR004_FamilyTreatmentWithPrimary</h2>
+    Fire mode:
+    Explicit
+      Description:
+      Rule to prevent paying for treatments done on the same day/period by the family members whenever the Primary member goes for treatment.
+
+To confirm:  if the entire claim should be suspended at first possible fraud occurrence.<table class="rules" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="60%"><col width="20%"><tr><th>Rule or Action</th><th>Detail</th><th>Description, Notes, and Categories</th></tr><tr><td title="Declare historyClaim"><span class="colx">
+            Declare
+            historyClaim</span></td><td><span class="colx">
+          Declare
+          historyClaim
+          as
+          ClaimHistory</span></td><td></td></tr><tr><td title="Declare historyClaimInvoice"><span class="colx">
+            Declare
+            historyClaimInvoice</span></td><td><span class="colx">
+          Declare
+          historyClaimInvoice
+          as
+          ClaimInvoiceHistory</span></td><td></td></tr><tr><td title="Declare historyClaimInvoiceLine"><span class="colx">
+            Declare
+            historyClaimInvoiceL...
+      </span></td><td><span class="colx">
+          Declare
+          historyClaimInvoiceLine
+          as
+          ClaimInvoiceLineHistory</span></td><td></td></tr><tr><td valign="top" title="ValidationRules"><span class="colx">ValidationRules</span></td><td><span class="colx"><b>Take the following actions:</b><br><b>&nbsp;&nbsp;&nbsp;&nbsp;If</b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; all of the following are true<b><br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;overrideReasonCode</b> does not have a value of "Waive Fraud Rules"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;not <b>benefitType</b> is in <b>VaccDentScreenBenefitTypesList</b></b> <br><b>&nbsp;&nbsp;&nbsp;&nbsp;Then</b><br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For each </b><b>historyClaim</b> in <b><b>inruleRequest</b><b> claimsHistoryForFamilyMembers</b></b><br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If</b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><b>historyClaim</b><b> status</b></b> has a value of "Paid", "Rejected", "Suspended"<br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Then</b><br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For each </b><b>historyClaimInvoice</b> in <b><b>historyClaim</b><b> invoices</b></b><br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For each </b><b>historyClaimInvoiceLine</b> in <b><b>historyClaimInvoice</b><b> invoiceLines</b></b><br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If</b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; all of the following are true<b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;not <b><b>historyClaimInvoiceLine</b><b> benefitType</b></b> is in <b>VaccDentScreenBenefitTypesList</b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;date range <b>treatmentFromDate</b> <b>treatmentToDate</b> overlaps range <b><b>historyClaimInvoiceLine</b><b> treatmentStartDate</b></b> <b><b>historyClaimInvoiceLine</b><b> treatmentEndDate</b></b> </b> <br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Then</b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;suspend claim invoice line for invoice <b><b>ClaimInvoice</b><b> invoiceId</b></b> and line <b>invoiceLineId</b> with message "FR004/1"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;set <b>Is Suspended</b> to true<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;halt rule set and log message "FR002 triggered for the current invoice line."       </span></td><td></td></tr></table></div><div class="rules"><h2>
+          Rule Set:
+          FR006_MultiDiagnosesCheck</h2>
+    Fire mode:
+    Explicit
+      Description:
+      InRule will include list of related procedures for a diagnosis, in an inline table.  For each diagnosis and member ID, we need an API call to get the whether any of the procedures are in member's past.<table class="rules" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="60%"><col width="20%"><tr><th>Rule or Action</th><th>Detail</th><th>Description, Notes, and Categories</th></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity8"></a><h2>
+          Entity: ClaimsPerMonth</h2>
+      Description:
+      month is 1-12, # prior to treatment date.<table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields8">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations8">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules8">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions8">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields8"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">ClaimsPerMonth</span></td><td><span class="colx">month</span></td><td><span class="colx">month</span></td><td><span class="colx">Integer</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimsPerMonth</span></td><td><span class="colx">count</span></td><td><span class="colx">count</span></td><td><span class="colx">Integer</span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations8"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity9"></a><h2>
+          Entity: ClaimInvoiceResult</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields9">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations9">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules9">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions9">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields9"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">ClaimInvoiceResult</span></td><td><span class="colx">invoiceNumber</span></td><td><span class="colx">invoiceNumber</span></td><td><span class="colx">Integer</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceResult</span></td><td><span class="colx">claimInvoiceLines</span></td><td><span class="colx">claimInvoiceLines</span></td><td><span class="colx">ClaimInvoiceLineResult</span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations9"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity10"></a><h2>
+          Entity: ClaimInvoiceLineResult</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields10">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations10">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules10">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions10">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields10"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">ClaimInvoiceLineResult</span></td><td><span class="colx">invoiceLineNumber</span></td><td><span class="colx">invoiceLineNumber</span></td><td><span class="colx">Integer</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLineResult</span></td><td><span class="colx">severityLevel</span></td><td><span class="colx">severityLevel</span></td><td><span class="colx">Integer</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLineResult</span></td><td><span class="colx">messages</span></td><td><span class="colx">messages</span></td><td><span class="colx">OutcomeMessage</span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations10"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity11"></a><h2>
+          Entity: OutcomeMessage</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields11">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations11">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules11">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions11">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields11"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">OutcomeMessage</span></td><td><span class="colx">messageCode</span></td><td><span class="colx">messageCode</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx">
+      Description:
+      /1 is about the version of answer related to the rejection code.  Most so far have only one, so /1 = message 1.  Later, there will be other messages identified by /x.</span></td></tr><tr><td><span class="colx">OutcomeMessage</span></td><td><span class="colx">messageParameters</span></td><td><span class="colx">messageParameters</span></td><td><span class="colx">OutcomeMessageParameters</span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations11"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity12"></a><h2>
+          Entity: OutcomeMessageParameters</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields12">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations12">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules12">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions12">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields12"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">OutcomeMessageParameters</span></td><td><span class="colx">parameterName</span></td><td><span class="colx">parameterName</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">OutcomeMessageParameters</span></td><td><span class="colx">ruleValue</span></td><td><span class="colx">ruleValue</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">OutcomeMessageParameters</span></td><td><span class="colx">actualValue</span></td><td><span class="colx">actualValue</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations12"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity13"></a><h2>
+          Entity: ClaimHistory</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields13">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations13">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules13">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions13">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields13"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">ClaimHistory</span></td><td><span class="colx">bupaClaimId</span></td><td><span class="colx">bupaClaimId</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimHistory</span></td><td><span class="colx">version</span></td><td><span class="colx">version</span></td><td><span class="colx">Integer</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimHistory</span></td><td><span class="colx">loggedDate</span></td><td><span class="colx">loggedDate</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimHistory</span></td><td><span class="colx">status</span></td><td><span class="colx">status</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimHistory</span></td><td><span class="colx">bupaMemberId</span></td><td><span class="colx">bupaMemberId</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimHistory</span></td><td><span class="colx">invoices</span></td><td><span class="colx">invoices</span></td><td><span class="colx">ClaimInvoiceHistory</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimHistory</span></td><td><span class="colx">HasOverlappingDates</span></td><td><span class="colx">Has Overlapping Dates</span></td><td><span class="colx">Boolean<br>
+            [Temporary]
+          </span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations13"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">ClaimHistory</span></td><td><span class="colx">Country</span></td><td><span class="colx">Country</span></td><td><span class="colx">String<br>
+            [Temporary]
+          </span></td><td><span class="colx"><pre>Safe(GetMember(invoices, IsNotNullOrEmpty(countryCode)).countryCode, "")</pre></span></td><td><span class="colx"></span></td></tr></table></div><a class="HrefName" name="Rules13"></a><div class="rules"><h2>
+          Rule Set:
+          SetOverlappingDatesRules</h2>
+    Fire mode:
+    Explicit<table class="rules" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="60%"><col width="20%"><tr><th>Rule or Action</th><th>Detail</th><th>Description, Notes, and Categories</th></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity14"></a><h2>
+          Entity: ClaimInvoiceHistory</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields14">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations14">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules14">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions14">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields14"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">ClaimInvoiceHistory</span></td><td><span class="colx">invoiceNumber</span></td><td><span class="colx">invoiceNumber</span></td><td><span class="colx">Integer</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceHistory</span></td><td><span class="colx">providerId</span></td><td><span class="colx">providerId</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceHistory</span></td><td><span class="colx">diagnosisCode</span></td><td><span class="colx">diagnosisCode</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceHistory</span></td><td><span class="colx">countryCode</span></td><td><span class="colx">countryCode</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceHistory</span></td><td><span class="colx">invoiceLines</span></td><td><span class="colx">invoiceLines</span></td><td><span class="colx">ClaimInvoiceLineHistory</span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations14"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity15"></a><h2>
+          Entity: ClaimInvoiceLineHistory</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields15">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations15">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules15">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions15">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields15"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">ClaimInvoiceLineHistory</span></td><td><span class="colx">invoiceLineNumber</span></td><td><span class="colx">invoiceLineNumber</span></td><td><span class="colx">Integer</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLineHistory</span></td><td><span class="colx">treatmentStartDate</span></td><td><span class="colx">treatmentStartDate</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLineHistory</span></td><td><span class="colx">treatmentEndDate</span></td><td><span class="colx">treatmentEndDate</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLineHistory</span></td><td><span class="colx">benefitType</span></td><td><span class="colx">benefitType</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLineHistory</span></td><td><span class="colx">bupaBenefitId</span></td><td><span class="colx">bupaBenefitId</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLineHistory</span></td><td><span class="colx">procedureCode</span></td><td><span class="colx">procedureCode</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations15"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity16"></a><h2>
+          Entity: Diagnosis</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields16">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations16">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules16">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions16">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields16"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">Diagnosis</span></td><td><span class="colx">code</span></td><td><span class="colx">code</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">Diagnosis</span></td><td><span class="colx">standard</span></td><td><span class="colx">standard</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">Diagnosis</span></td><td><span class="colx">description</span></td><td><span class="colx">description</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations16"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity17"></a><h2>
+          Entity: DiagnosisFull</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields17">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations17">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules17">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions17">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields17"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">DiagnosisFull</span></td><td><span class="colx">code</span></td><td><span class="colx">code</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">DiagnosisFull</span></td><td><span class="colx">standard</span></td><td><span class="colx">standard</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">DiagnosisFull</span></td><td><span class="colx">description</span></td><td><span class="colx">description</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">DiagnosisFull</span></td><td><span class="colx">gender</span></td><td><span class="colx">gender</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">DiagnosisFull</span></td><td><span class="colx">diagnosisGroup</span></td><td><span class="colx">diagnosisGroup</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">DiagnosisFull</span></td><td><span class="colx">relatedDiagnoses</span></td><td><span class="colx">relatedDiagnoses</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">DiagnosisFull</span></td><td><span class="colx">relatedProcedures</span></td><td><span class="colx">Related Procedures</span></td><td><span class="colx">String<br>
+            [Temporary]
+          </span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations17"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity18"></a><h2>
+          Entity: ConfigurationParameter -- Display Name: Configuration Parameter</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields18">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations18">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules18">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions18">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields18"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">ConfigurationParameter</span></td><td><span class="colx">Rule</span></td><td><span class="colx">Rule</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ConfigurationParameter</span></td><td><span class="colx">Name</span></td><td><span class="colx">Name</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ConfigurationParameter</span></td><td><span class="colx">Value</span></td><td><span class="colx">Value</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations18"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div></div><div class="entity"><a class="HrefName" name="DataElements"></a><h2>Data Elements:</h2><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col width="60%"><tr><th>Data Element Parent</th><th>Data Element Name</th><th>Details</th></tr><tr><td><span class="colx">BG_CI_01</span></td><td><span class="colx">Gender</span></td><td><span class="colx"><table class="rules" style="BACKGROUND-COLOR:#FFFFFF"><tr><th>
+                    Value
+                  </th><th>
+                    Display Name
+                  </th></tr><tr><td>F</td><td>Female</td></tr><tr><td>M</td><td>Male</td></tr><tr><td>Both</td><td>Both</td></tr><tr><td>Unknown</td><td>Unknown</td></tr></table></span></td></tr><tr><td><span class="colx">BG_CI_01</span></td><td><span class="colx">ClaimOverrideReason</span></td><td><span class="colx"><table class="rules" style="BACKGROUND-COLOR:#FFFFFF"><tr><th>
+                    Value
+                  </th><th>
+                    Display Name
+                  </th></tr><tr><td>PayInFull</td><td>Pay In Full</td></tr><tr><td>PaxMaximumPercentage</td><td>Pax Maximum Percentage</td></tr><tr><td>WaiveDeductibles</td><td>Waive Deductibles</td></tr><tr><td>WaiveEligibilityRules</td><td>Waive Eligibility Rules</td></tr><tr><td>WaiveFraudRules</td><td>Waive Fraud Rules</td></tr><tr><td>Unknown</td><td>Unknown</td></tr></table></span></td></tr><tr><td><span class="colx">BG_CI_01</span></td><td><span class="colx">ProviderSpecialisation</span></td><td><span class="colx"><table class="rules" style="BACKGROUND-COLOR:#FFFFFF"><tr><th>
+                    Value
+                  </th><th>
+                    Display Name
+                  </th></tr><tr><td>Network</td><td>Network</td></tr><tr><td>Evacuation</td><td>Evacuation</td></tr><tr><td>OutPatient</td><td>OutPatient</td></tr><tr><td>InPatient</td><td>InPatient</td></tr><tr><td>Anaesthesiology</td><td>Anaesthesiology</td></tr><tr><td>Cardiology</td><td>Cardiology</td></tr><tr><td>DentalSurgery</td><td>DentalSurgery</td></tr><tr><td>ENT</td><td>ENT</td></tr><tr><td>Gastroenterology</td><td>Gastroenterology</td></tr><tr><td>GeneralMedicalPractitioner</td><td>GeneralMedicalPractitioner</td></tr><tr><td>GeneralSurgery</td><td>GeneralSurgery</td></tr><tr><td>Neurology</td><td>Neurology</td></tr><tr><td>ObstetricsGynaecology</td><td>ObstetricsGynaecology</td></tr><tr><td>Oncology</td><td>Oncology</td></tr><tr><td>Ophthalmology</td><td>Ophthalmology</td></tr><tr><td>Orthopaedic</td><td>Orthopaedic</td></tr><tr><td>Pathology</td><td>Pathology</td></tr><tr><td>Physiotherapy</td><td>Physiotherapy</td></tr><tr><td>Psychiatry</td><td>Psychiatry</td></tr><tr><td>Radiology</td><td>Radiology</td></tr><tr><td>Rheumatology</td><td>Rheumatology</td></tr><tr><td>Urology</td><td>Urology</td></tr><tr><td>VascularSurgery</td><td>VascularSurgery</td></tr><tr><td>Acupuncture</td><td>Acupuncture</td></tr><tr><td>Chiropractice</td><td>Chiropractice</td></tr><tr><td>Homeopathics</td><td>Homeopathics</td></tr><tr><td>Osteopathy</td><td>Osteopathy</td></tr><tr><td>HealthHydro</td><td>HealthHydro</td></tr><tr><td>NatureCureClinic</td><td>NatureCureClinic</td></tr><tr><td>RehabilitationCentre</td><td>RehabilitationCentre</td></tr><tr><td>NursingHome</td><td>NursingHome</td></tr><tr><td>DetoxificationCentre</td><td>DetoxificationCentre</td></tr><tr><td>Chemists</td><td>Chemists</td></tr><tr><td>Import</td><td>Import</td></tr><tr><td>Cardiothoracic</td><td>Cardiothoracic</td></tr><tr><td>Ambulance</td><td>Ambulance</td></tr><tr><td>AccidentEmergency</td><td>AccidentEmergency</td></tr><tr><td>Dietician</td><td>Dietician</td></tr><tr><td>GeneralMedicine</td><td>GeneralMedicine</td></tr><tr><td>Genitourinary</td><td>Genitourinary</td></tr><tr><td>OtherMiscellaneous</td><td>OtherMiscellaneous</td></tr><tr><td>OccupationalTherapist</td><td>OccupationalTherapist</td></tr><tr><td>Paediatrics</td><td>Paediatrics</td></tr><tr><td>Radiotherapy</td><td>Radiotherapy</td></tr><tr><td>SpeechTherapy</td><td>SpeechTherapy</td></tr><tr><td>Podiatrists</td><td>Podiatrists</td></tr><tr><td>MarriageFamilyTherapist</td><td>MarriageFamilyTherapist</td></tr><tr><td>LicensedMasterSocialWorker</td><td>LicensedMasterSocialWorker</td></tr><tr><td>LicensedCounsellor</td><td>LicensedCounsellor</td></tr><tr><td>Pharmacy</td><td>Pharmacy</td></tr><tr><td>Unknown</td><td>Unknown</td></tr></table></span></td></tr><tr><td><span class="colx">BG_CI_01</span></td><td><span class="colx">ClaimPayeeType</span></td><td><span class="colx"><table class="rules" style="BACKGROUND-COLOR:#FFFFFF"><tr><th>
+                    Value
+                  </th><th>
+                    Display Name
+                  </th></tr><tr><td>MainMember</td><td>MainMember</td></tr><tr><td>Patient</td><td>Patient</td></tr><tr><td>P</td><td>Provider</td></tr><tr><td>Group</td><td>Group</td></tr><tr><td>Other</td><td>Other</td></tr><tr><td>Unknown</td><td>Unknown</td></tr></table></span></td></tr><tr><td><span class="colx">BG_CI_01</span></td><td><span class="colx">ProcedureType</span></td><td><span class="colx"><table class="rules" style="BACKGROUND-COLOR:#FFFFFF"><tr><th>
+                    Value
+                  </th><th>
+                    Display Name
+                  </th></tr><tr><td>ComplexMajor</td><td>ComplexMajor</td></tr><tr><td>MajorPlus</td><td>MajorPlus</td></tr><tr><td>Major</td><td>Major</td></tr><tr><td>Intermediate</td><td>Intermediate</td></tr><tr><td>Minor</td><td>Minor</td></tr><tr><td>InPatientNonSurgical</td><td>InPatientNonSurgical</td></tr><tr><td>EmergencyDental</td><td>EmergencyDental</td></tr><tr><td>Oncology</td><td>Oncology</td></tr><tr><td>Unknown</td><td>Unknown</td></tr></table></span></td></tr><tr><td><span class="colx">BG_CI_01</span></td><td><span class="colx">ProductStatus</span></td><td><span class="colx"><table class="rules" style="BACKGROUND-COLOR:#FFFFFF"><tr><th>
+                    Value
+                  </th><th>
+                    Display Name
+                  </th></tr><tr><td>Unknown</td><td>Unknown</td></tr><tr><td>Active</td><td>Active</td></tr><tr><td>Lapsed</td><td>Lapsed</td></tr><tr><td>Pended</td><td>Pended</td></tr><tr><td>Suspended</td><td>Suspended</td></tr><tr><td>Expired</td><td>Expired</td></tr></table></span></td></tr><tr><td><span class="colx">BG_CI_01</span></td><td><span class="colx">RelationType</span></td><td><span class="colx"><table class="rules" style="BACKGROUND-COLOR:#FFFFFF"><tr><th>
+                    Value
+                  </th><th>
+                    Display Name
+                  </th></tr><tr><td>Applicant</td><td>Applicant</td></tr><tr><td>Husband</td><td>Husband</td></tr><tr><td>Wife</td><td>Wife</td></tr><tr><td>Daughter</td><td>Daughter</td></tr><tr><td>Son</td><td>Son</td></tr><tr><td>Nanny</td><td>Nanny</td></tr><tr><td>Grandmother</td><td>Grandmother</td></tr><tr><td>Grandfather</td><td>Grandfather</td></tr><tr><td>Parent</td><td>Parent</td></tr><tr><td>Partner</td><td>Partner</td></tr><tr><td>SponsoredDependant</td><td>SponsoredDependant</td></tr><tr><td>Father</td><td>Father</td></tr><tr><td>Mother</td><td>Mother</td></tr><tr><td>Other</td><td>Other</td></tr><tr><td>Unknown</td><td>Unknown</td></tr></table></span></td></tr><tr><td><span class="colx">BG_CI_01</span></td><td><span class="colx">ClaimStatus</span></td><td><span class="colx"><table class="rules" style="BACKGROUND-COLOR:#FFFFFF"><tr><th>
+                    Value
+                  </th><th>
+                    Display Name
+                  </th></tr><tr><td>InProgress</td><td>InProgress</td></tr><tr><td>Paid</td><td>Paid</td></tr><tr><td>Suspended</td><td>Suspended</td></tr><tr><td>Rejected</td><td>Rejected</td></tr><tr><td>Adjusted</td><td>Adjusted</td></tr><tr><td>Unknown</td><td>Unknown</td></tr></table></span></td></tr><tr><td><span class="colx">BG_CI_01</span></td><td><span class="colx">DiagnosisStandard</span></td><td><span class="colx"><table class="rules" style="BACKGROUND-COLOR:#FFFFFF"><tr><th>
+                    Value
+                  </th><th>
+                    Display Name
+                  </th></tr><tr><td>ICD9</td><td>ICD9</td></tr><tr><td>ICD10</td><td>ICD10</td></tr><tr><td>Bupa</td><td>Bupa</td></tr><tr><td>Unknown</td><td>Unknown</td></tr></table></span></td></tr><tr><td><span class="colx">BG_CI_01</span></td><td><span class="colx">ProcedureCodesList</span></td><td><span class="colx"><table class="rules" style="BACKGROUND-COLOR:#FFFFFF"><tr><th>
+                    Value
+                  </th><th>
+                    Display Name
+                  </th></tr><tr><td>H0210</td><td></td></tr><tr><td>44950</td><td></td></tr><tr><td>44960</td><td></td></tr><tr><td>44970</td><td></td></tr></table></span></td></tr><tr><td><span class="colx">BG_CI_01</span></td><td><span class="colx">BenefitTypesList</span></td><td><span class="colx"><table class="rules" style="BACKGROUND-COLOR:#FFFFFF"><tr><th>
+                    Value
+                  </th><th>
+                    Display Name
+                  </th></tr><tr><td>400</td><td>Cancer</td></tr><tr><td>500</td><td>Maternity</td></tr><tr><td>950</td><td>Evacuation</td></tr><tr><td>960</td><td>Repatriation </td></tr><tr><td>1</td><td>Vaccination</td></tr><tr><td>2</td><td>Preventive Check-up</td></tr><tr><td>3</td><td>Dentistry</td></tr><tr><td>550</td><td></td></tr></table></span></td></tr><tr><td><span class="colx">BG_CI_01</span></td><td><span class="colx">DecisionEngineStatus</span></td><td><span class="colx"><table class="rules" style="BACKGROUND-COLOR:#FFFFFF"><tr><th>
+                    Value
+                  </th><th>
+                    Display Name
+                  </th></tr><tr><td>Approved</td><td>Approved</td></tr><tr><td>Rejected</td><td>Rejected</td></tr><tr><td>Suspended</td><td>Suspended</td></tr><tr><td>Failed</td><td>Failed</td></tr><tr><td>Unknown</td><td>Unknown</td></tr></table></span></td></tr><tr><td><span class="colx">BG_CI_01</span></td><td><span class="colx">EctomyProceduresList</span></td><td><span class="colx"><table class="rules" style="BACKGROUND-COLOR:#FFFFFF"><tr><th>
+                    Value
+                  </th><th>
+                    Display Name
+                  </th></tr><tr><td>B0812</td><td>Total thyroidectomy/near total thyroidectomy</td></tr><tr><td>B0813</td><td>Total thyroidectomy including block dissection of lymph nodes</td></tr><tr><td>B0820</td><td>Bilateral subtotal thyroidectomy</td></tr><tr><td>B0830</td><td>Total thyroid lobectomy &amp; isthmectomy</td></tr><tr><td>B0850</td><td>Isthmectomy of thyroid gland</td></tr><tr><td>B2700</td><td>Subcutaneous mastectomy with immediate implant</td></tr><tr><td>B2710</td><td>Radical mastectomy including block dissection</td></tr><tr><td>B2742</td><td>Modified radical mastectomy including lymph node sampling</td></tr><tr><td>B2743</td><td>Modified radical mastectomy excluding lymph node sampling</td></tr><tr><td>B2744</td><td>Modified radical mastectomy including lymph node clearance</td></tr><tr><td>B2752</td><td>Subcutaneous mastectomy</td></tr><tr><td>B2760</td><td>Skin/nipple sparing mastectomy (including axillary node biopsy)</td></tr><tr><td>B2780</td><td>Simple mastectomy (including axillary node biopsy)</td></tr><tr><td>B2912</td><td>Mastectomy and immediate reconstruction of breast using latissimus dorsi</td></tr><tr><td>B2916</td><td>Mastectomy and immediate reconstruction of breast using extended latissimus dorsi flap</td></tr><tr><td>B3012</td><td>Mastectomy and immediate reconstruction of breast using expandable prosthesis</td></tr><tr><td>B3013</td><td>Mastectomy and immediate reconstruction of breast using fixed prosthesis</td></tr><tr><td>E1910</td><td>Total pharyngectomy</td></tr><tr><td>E2010</td><td>Adenoidectomy</td></tr><tr><td>E2910</td><td>Total laryngectomy</td></tr><tr><td>E2920</td><td>Horizontal supra-glottic laryngectomy</td></tr><tr><td>E2930</td><td>Vertical hemi-laryngectomy</td></tr><tr><td>E2970</td><td>Sub-total laryngectomy</td></tr><tr><td>F3400</td><td>Tonsillectomy - child (and bilateral)</td></tr><tr><td>F3440</td><td>Tonsillectomy - adult (and bilateral)</td></tr><tr><td>F3480</td><td>Adenotonsillectomy (and bilateral)</td></tr><tr><td>G0100</td><td>Oesophagectomy/Oesophagogastrectomy with anastomosis in chest</td></tr><tr><td>G0220</td><td>Total oesophagectomy and interposition of intestine</td></tr><tr><td>G0260</td><td>Endoscopically assisted oesophagectomy</td></tr><tr><td>G0300</td><td>Sub-total oesophagectomy with anastomosis in neck</td></tr><tr><td>G2710</td><td>Total gastrectomy and excision of surrounding tissue</td></tr><tr><td>H0210</td><td>Appendicectomy</td></tr><tr><td>H0280</td><td>Laparoscopic appendicectomy</td></tr><tr><td>H0700</td><td>Other excision of right hemicolon</td></tr><tr><td>H0750</td><td>Laparoscopically assisted right hemicolectomy</td></tr><tr><td>H3363</td><td>Colectomy and colostomy and preservation of rectum</td></tr><tr><td>J5500</td><td>Total pancreatectomy and excision of surrounding tissue</td></tr><tr><td>J5520</td><td>Total pancreatectomy</td></tr><tr><td>J5700</td><td>Distal pancreatectomy</td></tr><tr><td>J5711</td><td>Pancreatectomy with autologous islet cell transplantation</td></tr><tr><td>J6900</td><td>Open splenectomy</td></tr><tr><td>J6980</td><td>Laparoscopic splenectomy</td></tr><tr><td>M0250</td><td>Nephrectomy ? unilateral</td></tr><tr><td>M0260</td><td>Transplant nephrectomy</td></tr><tr><td>M0280</td><td>Laparoscopic nephrectomy</td></tr><tr><td>M0282</td><td>Laparoscopic nephrectomy (including neproureterectomy)</td></tr><tr><td>M0283</td><td>Robot assisted laparoscopic nephrectomy</td></tr><tr><td>M6180</td><td>Radical prostatectomy, reconstruction of bladder neck including bilateral pelvic lymphadenectomy</td></tr><tr><td>M6182</td><td>Laparoscopic radical prostatectomy</td></tr><tr><td>M6192</td><td>Robot assisted Laparoscopic Prostatectomy</td></tr><tr><td>P2380</td><td>Anterior (+/- posterior) colporrhaphy with vaginal hysterectomy (including primary repair of enterocele)</td></tr><tr><td>Q0710</td><td>Radical hysterectomy and lymphadenectomy (Wertheim's)</td></tr><tr><td>Q0712</td><td>Radical trachelectomy including laparoscopic and removal of lymph</td></tr><tr><td>Q0740</td><td>Total abdominal hysterectomy (+/- oophorectomy)</td></tr><tr><td>Q0750</td><td>Subtotal abdominal hysterectomy (+/- oophorectomy)</td></tr><tr><td>Q0751</td><td>Laparoscopic subtotal hysterectomy (+/- oophorectomy)</td></tr><tr><td>Q0752</td><td>Robot assisted laparoscopic subtotal hysterectomy (+/- oophorectomy)</td></tr><tr><td>Q0790</td><td>Total laparoscopic hysterectomy</td></tr><tr><td>Q0791</td><td>Robot assisted laparoscopic total hysterectomy (+/- oophorectomy)</td></tr><tr><td>Q0880</td><td>Hysterectomy and removal of uterine adnexa for ovarian malignancy</td></tr><tr><td>Q2230</td><td>Oophorectomy and salpingectomy (as sole procedure) (including bilateral)</td></tr><tr><td>R2510</td><td>Caesarean hysterectomy</td></tr></table></span></td></tr><tr><td><span class="colx">BG_CI_01</span></td><td><span class="colx">RejectReasonsList</span></td><td><span class="colx"><table class="rules" style="BACKGROUND-COLOR:#FFFFFF"><tr><th>
+                    Value
+                  </th><th>
+                    Display Name
+                  </th></tr><tr><td>FR001/1</td><td>FR001/1 - Multiple Procedures found</td></tr></table></span></td></tr><tr><td><span class="colx">BG_CI_01</span></td><td><span class="colx">VaccDentScreenBenefitTypesList</span></td><td><span class="colx"><table class="rules" style="BACKGROUND-COLOR:#FFFFFF"><tr><th>
+                    Value
+                  </th><th>
+                    Display Name
+                  </th></tr><tr><td>3620</td><td>Vaccinations</td></tr><tr><td>3621</td><td>Vaccination - HPV (Human Papillomavirus)</td></tr><tr><td>5500</td><td>Dentistry - Routine</td></tr><tr><td>5510</td><td>Dentistry - Annual Check</td></tr><tr><td>5530</td><td>Dentistry - Orthodontic</td></tr><tr><td>5540</td><td>Dentistry - Major Restorative</td></tr><tr><td>5550</td><td>Dental Ex Gratia</td></tr><tr><td>5560</td><td>Dental Non Payable</td></tr><tr><td>5580</td><td>Dentistry - Preventive</td></tr><tr><td>4060</td><td>Screening - Genetic Cancer</td></tr><tr><td>6500</td><td>Full Health Screening</td></tr><tr><td>6501</td><td>Screening - Mammogram</td></tr><tr><td>6502</td><td>Screening - Pap test</td></tr><tr><td>6503</td><td>Screening - Prostate</td></tr><tr><td>6504</td><td>Screening - Colon Cancer</td></tr><tr><td>6505</td><td>Screening - Bone Densitometry</td></tr><tr><td>6506</td><td>Screening - Young Child</td></tr><tr><td>6507</td><td>Screening - Lead Poisoning</td></tr><tr><td>6510</td><td>Screening - Diabetes</td></tr></table></span></td></tr><tr><td><span class="colx">BG_CI_01</span></td><td><span class="colx">ConfigurationParametersTable</span></td><td><span class="colx"><table class="" bordercolor="#cccccc" border="1" cellpadding="2" cellspacing="2"><tr><td><u>Rule
+        (Text)
+      </u></td><td><u>Name
+        (Text)
+      </u></td><td><u>Value
+        (Text)
+      </u></td></tr><tr><td>FR003???</td><td>?LookBackMonths??</td><td>??1?</td></tr><tr><td>FR004???</td><td>?LookBackMonths??</td><td>??6?</td></tr></table></span></td></tr><tr><td><span class="colx">BG_CI_01</span></td><td><span class="colx">GetConfigurationParametersQuery</span></td><td><span class="colx">SELECT * FROM ConfigurationParametersTable</span></td></tr><tr><td><span class="colx">BG_CI_01</span></td><td><span class="colx">ConfigurationParametersList</span></td><td><span class="colx"></span></td></tr></table></div><div class="entity"><a class="HrefName" name="EndPoints"></a><h2>End Points:</h2><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col width="60%"><tr><th>End Point Parent</th><th>End Point Name</th><th>Details</th></tr><tr><td><span class="colx">BG_CI_01</span></td><td><span class="colx">XmlSchema1</span></td><td><span class="colx">
+              Last sync'd on
+              2020-12-26</span></td></tr></table></div><div class="entity"><a class="HrefName" name="UdfLibraries"></a><h2>User Defined Functions:</h2><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="10%"><col width="10%"><col width="10%"><col width="20%"><col width="50%"><tr><th>Library</th><th>Function</th><th>Return type</th><th>Parameters</th><th>irScript</th></tr><tr><td><span class="colx">HelperLib</span></td><td><span class="colx">CreateNewInRuleResponse</span></td><td><span class="colx">Entity InruleResponse</span></td><td><span class="colx"><table class="" bordercolor="#cccccc" border="0" cellpadding="2" cellspacing="2"></table></span></td><td><span class="colx"><pre>var newEntity = Context.CreateEntity("InruleResponse");
+return newEntity;</pre></span></td></tr><tr><td><span class="colx">HelperLib</span></td><td><span class="colx">CreateNewClaimInvoiceResult</span></td><td><span class="colx">Entity ClaimInvoiceResult</span></td><td><span class="colx"><table class="" bordercolor="#cccccc" border="0" cellpadding="2" cellspacing="2"></table></span></td><td><span class="colx"><pre>var newEntity = Context.CreateEntity("ClaimInvoiceResult");
+return newEntity;</pre></span></td></tr><tr><td><span class="colx">HelperLib</span></td><td><span class="colx">CreateNewClaimInvoiceLineResult</span></td><td><span class="colx">Entity ClaimInvoiceLineResult</span></td><td><span class="colx"><table class="" bordercolor="#cccccc" border="0" cellpadding="2" cellspacing="2"></table></span></td><td><span class="colx"><pre>var newEntity = Context.CreateEntity("ClaimInvoiceLineResult");
+return newEntity;</pre></span></td></tr><tr><td><span class="colx">HelperLib</span></td><td><span class="colx">CreateNewOutcomeMessage</span></td><td><span class="colx">Entity OutcomeMessage</span></td><td><span class="colx"><table class="" bordercolor="#cccccc" border="0" cellpadding="2" cellspacing="2"></table></span></td><td><span class="colx"><pre>var newEntity = Context.CreateEntity("OutcomeMessage");
+return newEntity;</pre></span></td></tr><tr><td><span class="colx">HelperLib</span></td><td><span class="colx">GetListItemByIndex</span></td><td><span class="colx">String </span></td><td><span class="colx"><table class="" bordercolor="#cccccc" border="0" cellpadding="2" cellspacing="2"><tr><td><u>Name</u></td><td><u>Data Type</u></td><td><u>Description</u></td></tr><tr><td>list</td><td>String</td><td></td></tr><tr><td>index</td><td>Integer</td><td></td></tr></table></span></td><td><span class="colx"><pre>// Function that takes a comma separated list of items and a numeric index as inputs, returning the item in the list at the position indicated by the index parameter.
+
+var values = list.Split(",");
+
+if(index &lt; values.Count)
+{
+	return values[index];
+}
+
+return "";
+</pre></span></td></tr><tr><td><span class="colx">HelperLib</span></td><td><span class="colx">GetListItemCount</span></td><td><span class="colx">Integer </span></td><td><span class="colx"><table class="" bordercolor="#cccccc" border="0" cellpadding="2" cellspacing="2"><tr><td><u>Name</u></td><td><u>Data Type</u></td><td><u>Description</u></td></tr><tr><td>list</td><td>String</td><td></td></tr></table></span></td><td><span class="colx"><pre>var values = list.Split(",");
+return values.Length;</pre></span></td></tr><tr><td><span class="colx">HelperLib</span></td><td><span class="colx">GetCsvFromList</span></td><td><span class="colx">String </span></td><td><span class="colx"><table class="" bordercolor="#cccccc" border="0" cellpadding="2" cellspacing="2"><tr><td><u>Name</u></td><td><u>Data Type</u></td><td><u>Description</u></td></tr><tr><td>list</td><td>String</td><td></td></tr></table></span></td><td><span class="colx"><pre>
+var result = "";
+var values = list.Split(",");
+
+for (var item in values)
+{
+	if(result != "")
+	{
+		result += ",";
+	}
+	result += item;	
+	//list += item.DisplayText;	
+}
+
+return result;</pre></span></td></tr></table></div></body>
+</html>
