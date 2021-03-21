@@ -1,0 +1,357 @@
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ir="http://www.inrule.com/XmlSchema/Schema" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style type="text/css">
+          body {
+          font: normal 8pt verdana,arial,helvetica;
+          color: #000000;
+          }
+          table tr th, table tr td {
+          font-size: 8pt;
+          text-align: left;
+          }
+          table.fields tr th{
+          font-weight: bold;
+          background:#a6caf0;
+          }
+          table.fields tr td {
+          font-size: 8pt;
+          text-align: left;
+          background: #eeeee0;
+          }
+
+          table.rules tr th {
+          font-weight: bold;
+          background:#a6caf0;
+          }
+          table.rules tr td {
+          font-size: 8pt;
+          text-align: left;
+          background: #eeeee0;
+          }
+          table.calculations tr th {
+          font-weight: bold;
+          background:#a6caf0;
+          }
+          table.calculations tr td {
+          font-size: 8pt;
+          text-align: left;
+          background: #eeeee0;
+          table-layout:fixed;
+          overflow:visible;
+          }
+          table.notifications tr th {
+          font-weight: bold;
+          background:#a6caf0;
+          }
+          table.notifications tr td {
+          font-size: 8pt;
+          text-align: left;
+          background: #eeeee0;
+          }
+          table.actions tr th {
+          font-weight: bold;
+          background:#a6caf0;
+          }
+          table.actions tr td {
+          font-size: 8pt;
+          text-align: left;
+          background: #eeeee0;
+          }
+          h1 {
+          margin: 0px 0px 5px;
+          font: 14pt verdana,arial,helvetica;
+          }
+          h2 {
+          margin-top: 1em;
+          margin-bottom: 0.5em;
+          font: bold 125% verdana,arial,helvetica;
+          }
+          div.entity {
+          border: 1px solid #cccccc;
+          margin-bottom: 1em;
+          }
+          div.def {
+          border-bottom: 1px solid #cccccc;
+          }
+          div.rules {
+          border-bottom: 1px solid #cccccc;
+          }
+          span.colx {
+          
+          }
+          .code {
+          font-size: 11px;
+          font-weight: normal;
+          font-family: Lucida Console, monospace;
+          background-color: #eeeeee;
+          padding: 0.25cm;
+          border-style: solid;
+          border-width: 1px;
+          border-color: #cccccc
+          }
+          table.rulesetfields tr {
+          background:#a6caf0;
+          text-align:left;
+          }
+          table.rulesetfields tr td {
+          font-size: 8pt;
+          text-align: left;
+          font-weight: normal;
+          background-color:tan;
+          }
+
+        </style>
+  </head>
+  <body>
+    <h1>InRule RuleApp Report</h1>
+        RuleApp Name:
+        BupaGlobalSchema1
+        Guid:
+        58d36797-e1ca-49e3-8fef-d8cd702c0d4e
+        Last Modified:
+        2021-03-21<br><br>
+          Total # Rules and Calcs:
+          0
+            # Entities:
+            15
+            # Fields:
+            89<br><hr size="1"><h2>Entities:</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Entity1">RootEntity</a></td><td><a class="HrefLink" href="#Entity2">InRuleRequest</a></td><td><a class="HrefLink" href="#Entity3">InRuleResponse</a></td><td><a class="HrefLink" href="#Entity4">Member</a></td></tr><tr><td><a class="HrefLink" href="#Entity5">Claim</a></td><td><a class="HrefLink" href="#Entity6">ClaimInvoice</a></td><td><a class="HrefLink" href="#Entity7">ClaimInvoiceLine</a></td><td><a class="HrefLink" href="#Entity8">ClaimHistory</a></td></tr><tr><td><a class="HrefLink" href="#Entity9">ClaimInvoiceHistory</a></td><td><a class="HrefLink" href="#Entity10">ClaimsInvoiceLineHistory</a></td><td><a class="HrefLink" href="#Entity11">ClaimsPerMonth</a></td><td><a class="HrefLink" href="#Entity12">OutcomeMessage</a></td></tr><tr><td><a class="HrefLink" href="#Entity13">OutcomeMessageParameter</a></td><td><a class="HrefLink" href="#Entity14">ClaimInvoiceResult</a></td><td><a class="HrefLink" href="#Entity15">ClaimInvoiceLineResult</a></td><td></td></tr></table><h2>Independent Rule Sets:</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"></table><h2>Data Elements, End Points, Udf Libraries and Categories:</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#DataElements">
+                    Data Elements
+                  </a></td><td><a class="HrefLink" href="#EndPoints">
+                    End Points
+                  </a></td><td><a class="HrefLink" href="#UdfLibraries">
+                    Udf Libraries
+                  </a></td><td><a class="HrefLink" href="#Categories">
+                    Categories
+                  </a></td><td></td></tr></table><div class="entity"><a class="HrefName" name="Entity1"></a><h2>
+          Entity: RootEntity -- Display Name: Root Entity</h2>
+      Description:
+      WAGDEHXYBVGBNBBBG<table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields1">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations1">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules1">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions1">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields1"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">RootEntity</span></td><td><span class="colx">Request</span></td><td><span class="colx">Request</span></td><td><span class="colx">InRuleRequest</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">RootEntity</span></td><td><span class="colx">Response</span></td><td><span class="colx">Response</span></td><td><span class="colx">InRuleResponse</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">RootEntity</span></td><td><span class="colx">Field1</span></td><td><span class="colx">Field1</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">RootEntity</span></td><td><span class="colx">Field2</span></td><td><span class="colx">Field2</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">RootEntity</span></td><td><span class="colx">Field3</span></td><td><span class="colx">Field3</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">RootEntity</span></td><td><span class="colx">Field4</span></td><td><span class="colx">Field4</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations1"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity2"></a><h2>
+          Entity: InRuleRequest -- Display Name: In Rule Request</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields2">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations2">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules2">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions2">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields2"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">InRuleRequest</span></td><td><span class="colx">Member</span></td><td><span class="colx">Member</span></td><td><span class="colx">Member</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">InRuleRequest</span></td><td><span class="colx">Claim</span></td><td><span class="colx">Claim</span></td><td><span class="colx">Claim</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">InRuleRequest</span></td><td><span class="colx">SystemDate</span></td><td><span class="colx">System Date</span></td><td><span class="colx">DateTime</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">InRuleRequest</span></td><td><span class="colx">ClaimsHistoryForMember</span></td><td><span class="colx">Claims History For Member</span></td><td><span class="colx">ClaimHistory</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">InRuleRequest</span></td><td><span class="colx">ClaimsHistoryForFamilyMembers</span></td><td><span class="colx">Claims History For Family Members</span></td><td><span class="colx">ClaimHistory</span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations2"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity3"></a><h2>
+          Entity: InRuleResponse -- Display Name: In Rule Response</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields3">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations3">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules3">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions3">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields3"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">InRuleResponse</span></td><td><span class="colx">ClaimInvoices</span></td><td><span class="colx">Claim Invoices</span></td><td><span class="colx">ClaimInvoiceResult</span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations3"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity4"></a><h2>
+          Entity: Member</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields4">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations4">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules4">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions4">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields4"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">Member</span></td><td><span class="colx">BupaMemberId</span></td><td><span class="colx">Bupa Member Id</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">Member</span></td><td><span class="colx">Gender</span></td><td><span class="colx">Gender</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">Member</span></td><td><span class="colx">DateOfBirth</span></td><td><span class="colx">Date Of Birth</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">Member</span></td><td><span class="colx">Nationality</span></td><td><span class="colx">Nationality</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">Member</span></td><td><span class="colx">DateOfDeath</span></td><td><span class="colx">Date Of Death</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">Member</span></td><td><span class="colx">RenewalDate</span></td><td><span class="colx">Renewal Date</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations4"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity5"></a><h2>
+          Entity: Claim</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields5">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations5">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules5">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions5">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields5"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">Claim</span></td><td><span class="colx">BupaClaimId</span></td><td><span class="colx">Bupa Claim Id</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">Claim</span></td><td><span class="colx">Version</span></td><td><span class="colx">Version</span></td><td><span class="colx">Integer</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">Claim</span></td><td><span class="colx">SymptomDate</span></td><td><span class="colx">Symptom Date</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">Claim</span></td><td><span class="colx">AdmissionDate</span></td><td><span class="colx">Admission Date</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">Claim</span></td><td><span class="colx">DischargeDate</span></td><td><span class="colx">Discharge Date</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">Claim</span></td><td><span class="colx">BaseCurrency</span></td><td><span class="colx">Base Currency</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">Claim</span></td><td><span class="colx">OverrideReasonCode</span></td><td><span class="colx">Override Reason Code</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">Claim</span></td><td><span class="colx">Invoices</span></td><td><span class="colx">Invoices</span></td><td><span class="colx">ClaimInvoice</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">Claim</span></td><td><span class="colx">NumberOfClaimsForPeriod</span></td><td><span class="colx">Number Of Claims For Period</span></td><td><span class="colx">ClaimsPerMonth</span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations5"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity6"></a><h2>
+          Entity: ClaimInvoice -- Display Name: Claim Invoice</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields6">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations6">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules6">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions6">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields6"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">ClaimInvoice</span></td><td><span class="colx">InvoiceId</span></td><td><span class="colx">Invoice Id</span></td><td><span class="colx">Integer</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoice</span></td><td><span class="colx">ProviderId</span></td><td><span class="colx">Provider Id</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoice</span></td><td><span class="colx">ProviderSpecialisation</span></td><td><span class="colx">Provider Specialisation</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoice</span></td><td><span class="colx">Diagnosis</span></td><td><span class="colx">Diagnosis</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx">
+      Description:
+      TBD</span></td></tr><tr><td><span class="colx">ClaimInvoice</span></td><td><span class="colx">InvoiceDate</span></td><td><span class="colx">Invoice Date</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoice</span></td><td><span class="colx">PayeeType</span></td><td><span class="colx">Payee Type</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx">
+      Description:
+      TBD</span></td></tr><tr><td><span class="colx">ClaimInvoice</span></td><td><span class="colx">ParticipatingProviderInd</span></td><td><span class="colx">Participating Provider Ind</span></td><td><span class="colx">Boolean</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoice</span></td><td><span class="colx">InvoiceLines</span></td><td><span class="colx">Invoice Lines</span></td><td><span class="colx">ClaimInvoiceLine</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoice</span></td><td><span class="colx">NumberOfInvoicesForProviderInPeriod</span></td><td><span class="colx">Number Of Invoices For Provider In Period</span></td><td><span class="colx">ClaimsPerMonth</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoice</span></td><td><span class="colx">NumberOfInvoicesForProvider</span></td><td><span class="colx">Number Of Invoices For Provider</span></td><td><span class="colx">Integer</span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations6"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity7"></a><h2>
+          Entity: ClaimInvoiceLine -- Display Name: Claim Invoice Line</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields7">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations7">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules7">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions7">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields7"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">InvoiceLineId</span></td><td><span class="colx">Invoice Line Id</span></td><td><span class="colx">Integer</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">BupaBenefitId</span></td><td><span class="colx">Bupa Benefit Id</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">BenefitType</span></td><td><span class="colx">Benefit Type</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">BupaRegistrationId</span></td><td><span class="colx">Bupa Registration Id</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">BupaPolicyId</span></td><td><span class="colx">Bupa Policy Id</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">BupaProductId</span></td><td><span class="colx">Bupa Product Id</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">ProcedureCode</span></td><td><span class="colx">Procedure Code</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">ProcedureType</span></td><td><span class="colx">Procedure Type</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">TreatmentFromDate</span></td><td><span class="colx">Treatment From Date</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">TreatmentToDate</span></td><td><span class="colx">Treatment To Date</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">PolicyValidTo</span></td><td><span class="colx">Policy Valid To</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">MemberProductLapsedDate</span></td><td><span class="colx">Member Product Lapsed Date</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">MemberProductSuspensionDate</span></td><td><span class="colx">Member Product Suspension Date</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">MemberProductStatus</span></td><td><span class="colx">Member Product Status</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx">
+      Description:
+      TBD</span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">SecondClaimCountry</span></td><td><span class="colx">Second Claim Country</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">Relationship</span></td><td><span class="colx">Relationship</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx">
+      Description:
+      TBD</span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">NumberOfIncidents</span></td><td><span class="colx">Number Of Incidents</span></td><td><span class="colx">Integer</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">OverrideReasonCode</span></td><td><span class="colx">Override Reason Code</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">NettAmount</span></td><td><span class="colx">Nett Amount</span></td><td><span class="colx">Decimal</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">ClaimedAmount</span></td><td><span class="colx">Claimed Amount</span></td><td><span class="colx">Decimal</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">OriginalJoinDate</span></td><td><span class="colx">Original Join Date</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">BiJoinDate</span></td><td><span class="colx">Bi Join Date</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLine</span></td><td><span class="colx">NumberOfLineItemsForProcedure</span></td><td><span class="colx">Number Of Line Items For Procedure</span></td><td><span class="colx">Integer</span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations7"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity8"></a><h2>
+          Entity: ClaimHistory -- Display Name: Claim History</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields8">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations8">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules8">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions8">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields8"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">ClaimHistory</span></td><td><span class="colx">BupaClaimId</span></td><td><span class="colx">Bupa Claim Id</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimHistory</span></td><td><span class="colx">Version</span></td><td><span class="colx">Version</span></td><td><span class="colx">Integer</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimHistory</span></td><td><span class="colx">LoggedDate</span></td><td><span class="colx">Logged Date</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimHistory</span></td><td><span class="colx">Status</span></td><td><span class="colx">Status</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimHistory</span></td><td><span class="colx">BupaMemberId</span></td><td><span class="colx">Bupa Member Id</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimHistory</span></td><td><span class="colx">Invoices</span></td><td><span class="colx">Invoices</span></td><td><span class="colx">ClaimInvoiceHistory</span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations8"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity9"></a><h2>
+          Entity: ClaimInvoiceHistory -- Display Name: Claim Invoice History</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields9">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations9">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules9">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions9">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields9"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">ClaimInvoiceHistory</span></td><td><span class="colx">InvoiceNumber</span></td><td><span class="colx">Invoice Number</span></td><td><span class="colx">Integer</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceHistory</span></td><td><span class="colx">ProviderId</span></td><td><span class="colx">Provider Id</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceHistory</span></td><td><span class="colx">DiagnosisCode</span></td><td><span class="colx">Diagnosis Code</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceHistory</span></td><td><span class="colx">CountryCode</span></td><td><span class="colx">Country Code</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceHistory</span></td><td><span class="colx">InvoiceLines</span></td><td><span class="colx">Invoice Lines</span></td><td><span class="colx">ClaimsInvoiceLineHistory</span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations9"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity10"></a><h2>
+          Entity: ClaimsInvoiceLineHistory -- Display Name: Claims Invoice Line History</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields10">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations10">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules10">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions10">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields10"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">ClaimsInvoiceLineHistory</span></td><td><span class="colx">InvoiceLineNumber</span></td><td><span class="colx">Invoice Line Number</span></td><td><span class="colx">Integer</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimsInvoiceLineHistory</span></td><td><span class="colx">TreatmentStartDate</span></td><td><span class="colx">Treatment Start Date</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimsInvoiceLineHistory</span></td><td><span class="colx">TreatmentEndDate</span></td><td><span class="colx">Treatment End Date</span></td><td><span class="colx">Date</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimsInvoiceLineHistory</span></td><td><span class="colx">InvoiceLineNumber1</span></td><td><span class="colx">Invoice Line Number1</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimsInvoiceLineHistory</span></td><td><span class="colx">BupaBenefitId</span></td><td><span class="colx">Bupa Benefit Id</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimsInvoiceLineHistory</span></td><td><span class="colx">ProcedureCode</span></td><td><span class="colx">Procedure Code</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations10"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity11"></a><h2>
+          Entity: ClaimsPerMonth -- Display Name: Claims Per Month</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields11">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations11">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules11">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions11">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields11"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">ClaimsPerMonth</span></td><td><span class="colx">Month</span></td><td><span class="colx">Month</span></td><td><span class="colx">Integer</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimsPerMonth</span></td><td><span class="colx">Count</span></td><td><span class="colx">Count</span></td><td><span class="colx">Integer</span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations11"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity12"></a><h2>
+          Entity: OutcomeMessage -- Display Name: Outcome Message</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields12">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations12">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules12">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions12">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields12"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">OutcomeMessage</span></td><td><span class="colx">MessageCode</span></td><td><span class="colx">Message Code</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">OutcomeMessage</span></td><td><span class="colx">MessageParameters</span></td><td><span class="colx">Message Parameters</span></td><td><span class="colx">OutcomeMessageParameter</span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations12"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity13"></a><h2>
+          Entity: OutcomeMessageParameter -- Display Name: Outcome Message Parameter</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields13">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations13">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules13">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions13">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields13"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">OutcomeMessageParameter</span></td><td><span class="colx">ParameterName</span></td><td><span class="colx">Parameter Name</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">OutcomeMessageParameter</span></td><td><span class="colx">RuleValue</span></td><td><span class="colx">Rule Value</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">OutcomeMessageParameter</span></td><td><span class="colx">ActualValue</span></td><td><span class="colx">Actual Value</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations13"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity14"></a><h2>
+          Entity: ClaimInvoiceResult -- Display Name: Claim Invoice Result</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields14">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations14">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules14">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions14">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields14"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">ClaimInvoiceResult</span></td><td><span class="colx">InvoiceNumber</span></td><td><span class="colx">Invoice Number</span></td><td><span class="colx">String</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceResult</span></td><td><span class="colx">ClaimInvoiceLines</span></td><td><span class="colx">Claim Invoice Lines</span></td><td><span class="colx">ClaimInvoiceLineResult</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceResult</span></td><td><span class="colx">Messages</span></td><td><span class="colx">Messages</span></td><td><span class="colx">OutcomeMessage</span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations14"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div></div><div class="entity"><a class="HrefName" name="Entity15"></a><h2>
+          Entity: ClaimInvoiceLineResult -- Display Name: Claim Invoice Line Result</h2><table class="links" border="0" cellpadding="3" cellspacing="2" width="100%"><col width="20%"><col width="20%"><col width="20%"><col width="20%"><tr><td><a class="HrefLink" href="#Fields15">
+                  Fields
+                </a></td><td><a class="HrefLink" href="#Calculations15">
+                  Calculations
+                </a></td><td><a class="HrefLink" href="#Rules15">
+                  Rule Sets
+                </a></td><td><a class="HrefLink" href="#Actions15">
+                  Actions
+                </a></td><td></td></tr></table><div class="def"><a class="HrefName" name="Fields15"></a><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Field parent</th><th>Field name</th><th>Display name</th><th>Data type</th><th>Default value</th><th>
+                  Description, Notes, and Categories
+                </th></tr><tr><td><span class="colx">ClaimInvoiceLineResult</span></td><td><span class="colx">InvoiceLineNumber</span></td><td><span class="colx">Invoice Line Number</span></td><td><span class="colx">Integer</span></td><td></td><td><span class="colx"></span></td></tr><tr><td><span class="colx">ClaimInvoiceLineResult</span></td><td><span class="colx">SeverityLevel</span></td><td><span class="colx">Severity Level</span></td><td><span class="colx">Integer</span></td><td></td><td><span class="colx"></span></td></tr></table></div><div class="def"><a class="HrefName" name="Calculations15"></a><table class="calculations" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col><col><col><col width="30%"><tr><th>Calc parent</th><th>Calc name</th><th>Display name</th><th>Data type</th><th>Expression</th><th>
+                  Description, Notes, and Categories
+                </th></tr></table></div></div><div class="entity"><a class="HrefName" name="DataElements"></a><h2>Data Elements:</h2><table class="fields" bordercolor="#cccccc" border="0" cellpadding="3" cellspacing="2" width="100%"><col><col><col width="60%"><tr><th>Data Element Parent</th><th>Data Element Name</th><th>Details</th></tr><tr><td><span class="colx">BupaGlobalSchema1</span></td><td><span class="colx">ClaimOverrideReasonsList</span></td><td><span class="colx"><table class="rules" style="BACKGROUND-COLOR:#FFFFFF"><tr><th>
+                    Value
+                  </th><th>
+                    Display Name
+                  </th></tr><tr><td>PayInFull</td><td></td></tr><tr><td>PaxMaximumPercentage</td><td></td></tr><tr><td>WaiveDeductibles</td><td></td></tr><tr><td>WaiveEligibilityRules</td><td></td></tr></table></span></td></tr><tr><td><span class="colx">BupaGlobalSchema1</span></td><td><span class="colx">MedicalDeclarationStatusesList</span></td><td><span class="colx"><table class="rules" style="BACKGROUND-COLOR:#FFFFFF"><tr><th>
+                    Value
+                  </th><th>
+                    Display Name
+                  </th></tr><tr><td>Authorised</td><td></td></tr><tr><td>Outstanding</td><td></td></tr><tr><td>PendingUnderwriting</td><td></td></tr></table></span></td></tr><tr><td><span class="colx">BupaGlobalSchema1</span></td><td><span class="colx">ProviderSpecialisationsList</span></td><td><span class="colx"><table class="rules" style="BACKGROUND-COLOR:#FFFFFF"><tr><th>
+                    Value
+                  </th><th>
+                    Display Name
+                  </th></tr><tr><td>Network</td><td></td></tr><tr><td>Evacuation</td><td></td></tr><tr><td>OutPatient</td><td></td></tr><tr><td>InPatient</td><td></td></tr><tr><td>Anaesthesiology</td><td></td></tr><tr><td>Cardiology</td><td></td></tr><tr><td>DentalSurgery</td><td></td></tr><tr><td>ENT</td><td></td></tr><tr><td>Gastroenterology</td><td></td></tr><tr><td>GeneralMedicalPractitioner</td><td></td></tr><tr><td>GeneralSurgery</td><td></td></tr><tr><td>Neurology</td><td></td></tr><tr><td>ObstetricsGynaecology</td><td></td></tr><tr><td>Oncology</td><td></td></tr><tr><td>Ophthalmology</td><td></td></tr><tr><td>Orthopaedic</td><td></td></tr><tr><td>Pathology</td><td></td></tr><tr><td>Physiotherapy</td><td></td></tr><tr><td>Psychiatry</td><td></td></tr><tr><td>Radiology</td><td></td></tr><tr><td>Rheumatology</td><td></td></tr><tr><td>Urology</td><td></td></tr><tr><td>VascularSurgery</td><td></td></tr><tr><td>Acupuncture</td><td></td></tr><tr><td>Chiropractice</td><td></td></tr><tr><td>Homeopathics</td><td></td></tr><tr><td>Osteopathy</td><td></td></tr><tr><td>HealthHydro</td><td></td></tr><tr><td>NatureCureClinic</td><td></td></tr><tr><td>RehabilitationCentre</td><td></td></tr><tr><td>NursingHome</td><td></td></tr><tr><td>DetoxificationCentre</td><td></td></tr><tr><td>Chemists</td><td></td></tr><tr><td>Import</td><td></td></tr><tr><td>Cardiothoracic</td><td></td></tr><tr><td>Ambulance</td><td></td></tr><tr><td>AccidentEmergency</td><td></td></tr><tr><td>Dietician</td><td></td></tr><tr><td>GeneralMedicine</td><td></td></tr><tr><td>Genitourinary</td><td></td></tr><tr><td>OtherMiscellaneous</td><td></td></tr><tr><td>OccupationalTherapist</td><td></td></tr><tr><td>Paediatrics</td><td></td></tr><tr><td>Radiotherapy</td><td></td></tr><tr><td>SpeechTherapy</td><td></td></tr><tr><td>Podiatrists</td><td></td></tr><tr><td>MarriageFamilyTherapist</td><td></td></tr><tr><td>LicensedMasterSocialWorker</td><td></td></tr><tr><td>LicensedCounsellor</td><td></td></tr><tr><td>Pharmacy</td><td></td></tr></table></span></td></tr><tr><td><span class="colx">BupaGlobalSchema1</span></td><td><span class="colx">ProcedureTypesList</span></td><td><span class="colx"><table class="rules" style="BACKGROUND-COLOR:#FFFFFF"><tr><th>
+                    Value
+                  </th><th>
+                    Display Name
+                  </th></tr><tr><td>ComplexMajor</td><td></td></tr><tr><td>MajorPlus</td><td></td></tr><tr><td>Major</td><td></td></tr><tr><td>Intermediate</td><td></td></tr><tr><td>Minor</td><td></td></tr><tr><td>InPatientNonSurgical</td><td></td></tr><tr><td>EmergencyDental</td><td></td></tr><tr><td>Oncology</td><td></td></tr></table></span></td></tr><tr><td><span class="colx">BupaGlobalSchema1</span></td><td><span class="colx">DecisionEngineStatusesList</span></td><td><span class="colx"><table class="rules" style="BACKGROUND-COLOR:#FFFFFF"><tr><th>
+                    Value
+                  </th><th>
+                    Display Name
+                  </th></tr><tr><td>Valid</td><td></td></tr><tr><td>Rejected</td><td></td></tr><tr><td>Suspended</td><td></td></tr></table></span></td></tr><tr><td><span class="colx">BupaGlobalSchema1</span></td><td><span class="colx">SeverityLevelsList</span></td><td><span class="colx"><table class="rules" style="BACKGROUND-COLOR:#FFFFFF"><tr><th>
+                    Value
+                  </th><th>
+                    Display Name
+                  </th></tr><tr><td>Pass</td><td>Severity level -1 or 0 or 1</td></tr><tr><td>RejectOverride</td><td>Severity level 2 - reject but overridable</td></tr><tr><td>Reject</td><td>Severity level 3 - reject but overridable</td></tr><tr><td>NotEligible L4</td><td>Severity level 4 - reject but overridable</td></tr><tr><td>SystemError</td><td>Severity level 5 or 15</td></tr><tr><td>SuspendUnknown</td><td>Severity level 6 (where UIQ answer is "Unknown")</td></tr><tr><td>NotEligible L7</td><td>Severity level 7 - benefit head not covered by product</td></tr><tr><td>SuspendMoneyOut</td><td>Severity level 8 - money outstanding</td></tr><tr><td>SuspendRerouted</td><td>Severity level 9 - claim re-rerouted to Participating Hospital work queue</td></tr></table></span></td></tr></table></div></body>
+</html>
